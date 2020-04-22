@@ -1,0 +1,285 @@
+/* style.css */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a { text-decoration: none;}
+  ul { list-style-type: none;}
+  
+  body {
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    min-width: 1200px;
+    color: #333;
+  }
+  
+  .header_wrap {
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+  }
+  
+  #main_header {
+    width: 1200px; height: 100px;
+    position: relative;
+    /* background: #ccc; */
+    margin: 0 auto;
+  }
+  #main_header > h1 {
+    position: absolute;
+    left: 0; top: 5px;
+  }
+  #gnb {
+    position: absolute;
+    right: 0; top: 40px;
+  }
+  #gnb > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  #gnb > ul > li:last-child { margin-right: 0;}
+  
+  #gnb > ul > li a { color: #333; }
+  
+  /* 비주얼 */
+  #visual {
+    position: relative;
+    height: 650px;
+    /* outline: 2px solid red; */
+    overflow: hidden;
+  }
+  #visual > .img {
+    position: absolute;
+    left: 0; top: 0;
+    width: 1920px;
+    height: 650px;
+    /* margin: 0 auto; */
+    left: 50%;
+    margin-left: -960px;
+    
+  }
+  #visual_pager {
+    width: 1200px;
+    /* outline: 2px solid red; */
+    overflow: hidden;
+    background: #0b223c;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -600px;
+  }
+  #visual_pager > a {
+    display: block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+  }
+  /* 비주얼 버튼 배경색 상태 */
+  #visual_pager > a.selected {
+    background: #ffcb05;
+  }
+  #visual_pager > a:hover {
+    background: rgb(255, 203, 5, 0.8)
+  }
+  
+  #visual .container-full {
+    background: #0b223c;
+  }
+  .col-text {
+      height: 500px;
+  }
+  .col-text p {
+      font-size: 14px;
+      padding-top: 30px;
+      text-align: left;
+  }
+  .col-text > .cl {
+    padding: 0;
+    font-size: 12px;
+    color: #888;
+  }
+  .col-text > .boo {
+      font-size: 12px;
+      color: #666;
+  }
+  .col-text a {
+      color: #211d71;
+      font-size: 15px;
+      display: inline-block;
+  }
+  .col-text a:hover {
+      color: #ffcb05;
+  }
+  .col-text > h3 { 
+      text-transform: uppercase;
+      text-align: center;
+  }
+  
+  /* 공지사항 */
+  #notice {
+    background: #004989;
+    color: #fff;
+  }
+  #notice > .notice-container {
+    width: 1200px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #notice > .notice-container .title {
+    float: left;
+    font-size: 16px;
+  }
+  #notice > .notice-container .title span {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #notice > .notice-container .text {
+    float: left;
+    font-size: 15px;
+  }
+  #notice > .notice-container .date {
+    float: right;
+    font-size: 15px;
+  }
+  #notice p { padding-top: 0;}
+  
+  /* 공통 섹션 */
+  section header h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  section header p { 
+    font-size: 16px;
+    color: #666;
+    padding-top: 5px;
+  }
+  section h3 { 
+    font-size: 20px;
+  }
+  section p { padding-top: 5px;}
+  section .col-text { margin-top: 1em;}
+  section .row { margin-top: 30px;}
+  
+  /* operation 섹션 */
+  #operation, #company {
+    width: 1200px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* text-align: center; */
+  }
+  #operation > header, #company > header {
+      text-align: center;
+  }
+  #operation > .row, 
+  #company > .row {
+    overflow: hidden;
+  }
+  #operation > .row > .col, 
+  #company > .row > .col {
+    position: relative;
+    width: 368px; 
+    height: 355px;
+    margin-right: 20px;
+    float: left;
+    /* border: 1px solid green; */
+    overflow: hidden;
+  }
+
+  #operation > .row > .col:last-child,
+  #company > .row > .col:last-child {
+    margin-right: 0;
+  }
+  
+  /* more 버튼 */
+  .btn-more {
+    display: inline-block;
+    width: 120px; height: 35px;
+    line-height: 35px;
+    border: 1px solid #333;
+    margin-top: 24px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #333;
+    text-align: center;
+    margin-left: 120px;
+  } 
+  
+  #company {
+    background: #131c2b;
+    color: #fff;
+  }
+  #company p { color: #fff;}
+  #company .btn-more {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  /* 배경 이미지 채우기 */
+  .company-container-full {
+    background: #131c2b;
+    background-image: url("../images/company-bg.jpg");
+    background-size: cover;
+  }
+  #main-footer {
+    width: 1200px;
+    height: 45px;
+    margin: 0 auto;
+    background: #f8f8f8;
+  }
+  #footer-menu {
+    /* outline: 1px solid red; */
+    height: 45px;
+  }
+  #footer-menu > ul {
+    float: left;
+  }
+  #footer-menu > ul > li {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 45px;
+  }
+  #footer-menu > ul > li:first-child {
+    margin: 0;
+  }
+  #footer-menu > ul > li > a {
+    color: #888;
+  }
+  #footer-menu > a {
+    float: right;
+    background: #444;
+    color: #fff;
+    font-size: 15px;
+    line-height: 45px;
+    width: 70px;
+    text-align: center;
+  }
+  .footer-info {
+    /* outline: 1px solid red; */
+    height: 80px;
+  }
+  .footer-info > .logo {
+    float: left;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+  }
+  .footer-info > .f-logo {
+      float: right;
+      margin-top: 10px;
+  }
+  .footer {
+    /* margin-top: 10px; */
+    height: 35px;
+    /* display: block; */
+    font-size: 12px;
+    color: #888;
+    float: left;
+  }
