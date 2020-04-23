@@ -80,16 +80,14 @@
 
   #sub-visual img {
     width: 1200px;
-    /* margin: 0 auto; */
-    margin-left: 351px;
-    margin-top: 50px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
   }
   #table {
       width: 1200px;
       margin: 0 auto;
       margin-top: 50px;
-      /* position: relative; */
-      /* left: 380px; bottom: -100px; */
   }
 
   #table, th, td {
