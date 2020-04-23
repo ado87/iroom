@@ -77,6 +77,12 @@
       height: 43px;
       line-height: 43px;
   }
+  #sub > ul > li:nth-child(5) {
+    background: #271d67;
+  }
+  #sub > ul > li a.selected {
+    color: #fff;
+  }
 
   #sub-visual img {
     width: 1200px;
